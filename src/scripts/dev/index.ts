@@ -24,6 +24,8 @@ const getConcurrentlyArgs = (scripts: Scripts) => {
   ].filter(Boolean);
 }
 
+console.log(getConcurrentlyArgs(scripts))
+
 const result = spawnSync(
   resolveBin('concurrently'),
   getConcurrentlyArgs(scripts),
