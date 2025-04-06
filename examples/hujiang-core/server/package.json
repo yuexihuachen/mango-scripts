@@ -1,0 +1,9 @@
+{
+  "name": "hono-project",
+  "dependencies": {
+    "hono": "^4.7.5"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
