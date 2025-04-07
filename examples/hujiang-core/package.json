@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ../../dist/bin dev",
-    "build": "node ../../dist/bin build"
+    "build": "node ../../dist/bin build",
+    "debug": "node ../../dist/bin dev"
   },
   "author": "",
   "license": "ISC",

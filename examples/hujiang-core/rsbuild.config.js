@@ -4,6 +4,9 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [pluginReact()],
+  dev: {
+    hmr: true,
+  },
   source: {
     entry: {
       index:'./client/src/index.tsx'
@@ -12,5 +15,11 @@ export default defineConfig({
   },
   output: {
     assetPrefix: './',
+    manifest: true,
+    filenameHash: false,
+    sourceMap: {
+      js: 'source-map',
+      css: true
+    }
   }
 });
