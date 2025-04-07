@@ -3,8 +3,8 @@ import { utils } from '../../utils';
 const { spawnSync, resolveBin } = utils;
 
 const result = spawnSync(
-  resolveBin('bun'),[
-    'index.ts'
+  resolveBin('bun'),['--inspect',
+    './index.ts'
   ],
   {
     stdio: 'inherit'

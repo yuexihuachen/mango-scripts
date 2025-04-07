@@ -18,7 +18,7 @@ const webpackConfig = hasFile('rsbuild.config.js')
 
 const result = spawnSync(
   resolveBin('rsbuild'),
-  ['dev', '--config', webpackConfig, ...args],
+  ['build','-w', '--config', webpackConfig, ...args],
   {
     stdio: 'inherit',
     env: Object.assign({ BUILD_WEBPACK: true }, process.env),
